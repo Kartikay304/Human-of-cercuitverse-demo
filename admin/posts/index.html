@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Candal|Lora"rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/stylesheets/style.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/admin.css">
+    <link rel="stylesheet" href="../sidenav.css">
+    <title>Admin Section - Manage Posts</title>
+</head>
+<body>
+  
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+              <div class="hamburger">
+                <a href="#">
+                  <i class="fas fa-arrow-circle-left"></i>
+              </a>
+          </div>
+      </div>
+      
+      <div class="container">
+        <div class="admin-wrapper">
+            <div class="admin-content">
+                <div class="button-group">
+                    <a href="create.html" class="btn btn-big">Add Post</a>
+                    <a href="index.html" class="btn btn-big">Manage Posts</a>
+                </div>
+                <div class="content">
+                    <h2 class="page-title">Manage Posts</h2>
+                    <table>
+                        <thead>
+                            <th>SN</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th colspan="3">Action</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>About Me</td>
+                                <td>Satvik Ramaprasad</td>
+                                <td><a href="#" class="edit">edit</a></td>
+                                <td><a href="#" class="delete">delete</a></td>
+                                <td><a href="#" class="publish">publish</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>My CircuitVerse Journey</td>
+                                <td>Satvik Ramaprasad</td>
+                                <td><a href="#" class="edit">edit</a></td>
+                                <td><a href="#" class="delete">delete</a></td>
+                                <td><a href="#" class="publish">publish</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="profile">
+        <img src="../../assets/photo/1.jpg">
+        <h3>Satvik Ramaprasad</h3>
+        <p>Admin</p>
+    </div>
+    <ul>
+        <li>
+            <a href="../../index.html">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="item">Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="../sidenav.html">
+                <span class="icon"><i class="fas fa-desktop"></i></span>
+                <span class="item">My Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="active">
+                <span class="icon"><i class="fas fa-edit"></i></span>
+                <span class="item">Edit</span>
+            </a>
+        </li> 
+        <li>
+            <a href="../users/index.html">
+                <span class="icon"><i class="fas fa-user-shield"></i></span>
+                <span class="item">Admin</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fas fa-info"></i></span>
+                <span class="item">Info</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                <span class="item">Logout</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../assets/stylesheets/js/scripts.js"></script>
+<script type="text/javascript">
+ var hamburger = document.querySelector(".hamburger");
+ hamburger.addEventListener("click", function(){
+    document.querySelector("body").classList.toggle("active");
+})
+</script>
+</body>
+</html>
